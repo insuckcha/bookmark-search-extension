@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bookmark Search</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      width: 320px;
+      margin: 0;
+      padding: 16px;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: #444;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 8px 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      outline: none;
+      transition: border 0.2s ease-in-out;
+    }
+
+    input[type="text"]:focus {
+      border-color: #5a9dfc;
+    }
+
+    #results {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    .bookmark {
+      display: block;
+      padding: 10px;
+      margin-bottom: 8px;
+      background-color: #fff;
+      border: 1px solid #e1e4e8;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #0366d6;
+      font-size: 14px;
+      transition: background 0.2s ease;
+    }
+
+    .bookmark:hover {
+      background-color: #eaf3ff;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔍 Bookmarks</h1>
+  <input type="text" id="search" placeholder="Search bookmarks..." />
+  <div id="results"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

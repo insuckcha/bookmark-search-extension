@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Bookmark Search",
+  "version": "2.0",
+  "description": "Search your bookmarks by keyword.",
+  "permissions": ["bookmarks"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  }
+}
