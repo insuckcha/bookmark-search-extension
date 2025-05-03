@@ -11,17 +11,17 @@ A lightweight, privacy-friendly Chrome extension that lets you search your brows
 
 ## 📷 Screenshots
 
-![Screenshot](chrome_store_screenshot_1280x800.png)
+![Screenshot](chrome_store_screenshot_centered_1280x800.png)
 
 ## 🔐 Privacy Policy
 
 This extension does **not collect any user data**.  
 Full privacy policy available here:  
-[https://yourusername.github.io/bookmark-search-extension/privacy.html](https://yourusername.github.io/bookmark-search-extension/privacy.html)
+[https://insuckcha.github.io/bookmark-search-extension/privacy.html](https://insuckcha.github.io/bookmark-search-extension/privacy.html)
 
 ## 📦 Installation
 
-Available on the [Chrome Web Store](https://chrome.google.com/webstore/detail/YOUR-ID-HERE).
+**Coming soon on the [Chrome Web Store](https://chrome.google.com/webstore/category/extensions)**
 
 Or install manually:
 
@@ -38,8 +38,8 @@ Or install manually:
 ## 📧 Contact
 
 Have questions or suggestions?  
-Feel free to open an issue or email `youremail@example.com`.
+Open an issue or email `insuckcha@gmail.com`.
 
 ---
 
-Made with ❤️ for productivity lovers.
+Made with ❤️ by [@insuckcha](https://github.com/insuckcha)
