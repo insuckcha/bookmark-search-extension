@@ -1,27 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy – Bookmark Search</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      background-color: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #222;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #444;
+      margin-top: 24px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p><strong>Bookmark Search</strong> does not collect, store, or transmit any personal data or browsing activity.</p>
+  <div class="container">
+    <h1>Privacy Policy</h1>
 
-  <h2>What the extension does</h2>
-  <p>The extension provides a local search interface for your existing browser bookmarks. All data access is done using the built-in <code>chrome.bookmarks</code> API, and all functionality is performed within your browser.</p>
+    <p><strong>Bookmark Search</strong> is a Chrome extension designed to search your local browser bookmarks. This tool values your privacy and is built with a simple principle: <em>your data stays with you</em>.</p>
 
-  <h2>Data Handling</h2>
-  <ul>
-    <li>No user data is collected or stored</li>
-    <li>No data is sent to any external server</li>
-    <li>No cookies, trackers, or analytics are used</li>
-  </ul>
+    <h2>What This Extension Does</h2>
+    <p>This extension searches bookmarks already stored in your browser. It uses the <code>chrome.bookmarks</code> API to read bookmark titles and URLs, and displays search results in a popup interface.</p>
 
-  <h2>Permissions</h2>
-  <p>The extension requests access only to your bookmarks in order to perform local search. No other permissions are requested.</p>
+    <h2>What Data Is Collected</h2>
+    <ul>
+      <li>✅ <strong>No data is collected</strong></li>
+      <li>❌ No analytics</li>
+      <li>❌ No personal information</li>
+      <li>❌ No external servers</li>
+    </ul>
 
-  <h2>Contact</h2>
-  <p>If you have any questions, you can contact the developer at <em>youremail@example.com</em>.</p>
+    <h2>Permissions</h2>
+    <p>We request only the <code>bookmarks</code> permission in order to read and display your bookmark data locally. No other permissions are used.</p>
+
+    <h2>Contact</h2>
+    <p>If you have any questions, you can contact the developer at <a href="mailto:insuckcha@gmail.com">insuckcha@gmail.com</a>.</p>
+
+    <footer>
+      &copy; 2025 Bookmark Search — Made with ❤️ for Chrome users
+    </footer>
+  </div>
 </body>
 </html>
