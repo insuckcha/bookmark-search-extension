@@ -1,70 +1,99 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Bookmark Search</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Bookmark Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            html,
+            body {
+                width: 480px;
+                max-width: 100%;
+                margin: 0;
+                padding: 16px;
+                background-color: #f7f9fc;
+                color: #333;
+                font-family: "Segoe UI", sans-serif;
+                box-sizing: border-box;
+            }
 
-    body {
-      font-family: "Segoe UI", sans-serif;
-      width: 320px;
-      margin: 0;
-      padding: 16px;
-      background-color: #f7f9fc;
-      color: #333;
-    }
+            * {
+                box-sizing: inherit;
+            }
 
-    h1 {
-      font-size: 18px;
-      margin-bottom: 12px;
-      color: #444;
-    }
+            h1 {
+                font-size: 18px;
+                margin-bottom: 12px;
+                color: #444;
+            }
 
-    input[type="text"] {
-      width: 100%;
-      padding: 8px 10px;
-      font-size: 14px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      margin-bottom: 16px;
-      outline: none;
-      transition: border 0.2s ease-in-out;
-    }
+            input[type="text"] {
+                width: 100%;
+                max-width: 100%;
+                padding: 10px 14px;
+                font-size: 15px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                background-color: #fff;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+                margin-bottom: 16px;
+                outline: none;
+            }
 
-    input[type="text"]:focus {
-      border-color: #5a9dfc;
-    }
+            input[type="text"]:focus {
+                border-color: #5a9dfc;
+                box-shadow: 0 0 0 2px rgba(90, 157, 252, 0.2);
+            }
 
-    #results {
-      max-height: 400px;
-      overflow-y: auto;
-    }
+            .folder {
+                font-weight: bold;
+                margin-top: 16px;
+                margin-bottom: 8px;
+                color: #333;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
 
-    .bookmark {
-      display: block;
-      padding: 10px;
-      margin-bottom: 8px;
-      background-color: #fff;
-      border: 1px solid #e1e4e8;
-      border-radius: 8px;
-      text-decoration: none;
-      color: #0366d6;
-      font-size: 14px;
-      transition: background 0.2s ease;
-    }
+            .bookmark {
+                display: block;
+                padding: 8px;
+                margin-bottom: 4px;
+                background: white;
+                border: 1px solid #ddd;
+                border-radius: 6px;
+                text-decoration: none;
+                color: #0366d6;
+                font-size: 14px;
 
-    .bookmark:hover {
-      background-color: #eaf3ff;
-    }
-  </style>
-</head>
-<body>
-  <h1>🔍 Bookmarks</h1>
-  <input type="text" id="search" placeholder="Search bookmarks..." />
-  <div id="results"></div>
-  <script src="popup.js"></script>
-</body>
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .bookmark:hover {
+                background: #eaf3ff;
+            }
+
+            #results {
+                max-height: 500px;
+                overflow-y: auto;
+                overflow-x: hidden;
+
+                scrollbar-width: none; /* Firefox */
+                -ms-overflow-style: none; /* IE/Edge */
+            }
+
+            #results::-webkit-scrollbar {
+                display: none; /* Chrome/Safari */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>🔍 Bookmarks</h1>
+        <input type="text" id="search" placeholder="Search bookmarks..." />
+        <div id="results"></div>
+        <script src="popup.js"></script>
+    </body>
 </html>
