@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Bookmark Search",
-    "version": "1.1",
+    "version": "2.1",
     "description": "Quickly search and open your Chrome bookmarks in a clean, grouped interface.",
     "permissions": ["bookmarks"],
     "action": {
